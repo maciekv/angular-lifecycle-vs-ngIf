@@ -1,27 +1,36 @@
-# TestLifecycle
+Constructor: Component instance created
+app.component.ts:22 ngOnInit: Component initialized
+app.component.ts:57 ngOnInit - Link 1: Link 1 not present
+app.component.ts:58 ngOnInit - Link 2: Link 2 not present
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+app.component.ts:27 ngDoCheck: Change detection run
+app.component.ts:57 ngDoCheck - Link 1: Link 1 not present
+app.component.ts:58 ngDoCheck - Link 2: Link 2 not present
 
-## Development server
+app.component.ts:32 ngAfterContentInit: Content initialized
+app.component.ts:57 ngAfterContentInit - Link 1: Link 1 not present
+app.component.ts:58 ngAfterContentInit - Link 2: Link 2 not present
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+app.component.ts:37 ngAfterContentChecked: Content checked
+app.component.ts:57 ngAfterContentChecked - Link 1: Link 1 not present
+app.component.ts:58 ngAfterContentChecked - Link 2: Link 2 not present
 
-## Code scaffolding
+app.component.ts:42 ngAfterViewInit: View initialized
+app.component.ts:57 ngAfterViewInit - Link 1: Link 1 OK
+app.component.ts:58 ngAfterViewInit - Link 2: Link 2 OK
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+app.component.ts:47 ngAfterViewChecked: View checked
+app.component.ts:57 ngAfterViewChecked - Link 1: Link 1 OK
+app.component.ts:58 ngAfterViewChecked - Link 2: Link 2 OK
 
-## Build
+app.component.ts:27 ngDoCheck: Change detection run
+app.component.ts:57 ngDoCheck - Link 1: Link 1 OK
+app.component.ts:58 ngDoCheck - Link 2: Link 2 OK
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+app.component.ts:37 ngAfterContentChecked: Content checked
+app.component.ts:57 ngAfterContentChecked - Link 1: Link 1 OK
+app.component.ts:58 ngAfterContentChecked - Link 2: Link 2 OK
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+app.component.ts:47 ngAfterViewChecked: View checked
+app.component.ts:57 ngAfterViewChecked - Link 1: Link 1 OK
+app.component.ts:58 ngAfterViewChecked - Link 2: Link 2 OK
